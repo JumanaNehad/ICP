@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/poll2_backend"
+]
+resolver = "2"

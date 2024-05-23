@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "poll2_backend": {
+      "candid": "src/poll2_backend/poll2_backend.did",
+      "package": "poll2_backend",
+      "type": "rust"
+    },
+    "poll2_frontend": {
+      "dependencies": [
+        "poll2_backend"
+      ],
+      "source": [
+        "src/poll2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "poll2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
